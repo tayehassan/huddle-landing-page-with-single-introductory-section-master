@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+
+:root{
+
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: url(images/bg-desktop.svg)no-repeat, hsl(257, 40%, 49%);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+padding: 50px;
+color: hsl(0, 0%, 100%);
+font-size: 16px;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Open Sans';
+  font-weight: 600;
+  line-height: 2;
+  font-size: 37px;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+p{
+padding: 10px 0 50px;
+line-height: 2;
+}
+
+a{
+  margin: 200px 0;
+  padding: 10px 60px;
+  border: 0;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: hsl(0, 0%, 100%);
+  background: hsl(300, 69%, 71%);
+}
+
+.content{
+  max-width: 460px;
+  padding-bottom: 100px;
+}
+
+.container>img{
+  align-self: flex-start;
+  padding-bottom: 100px;
+}
+
+.social-icon{
+  align-self: flex-end;
+  display: flex;
+  gap: 30px;
+}
+
+.social-icon>div{
+  cursor: pointer;
+  border: 1px solid;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+i{
+  font-size: 30px;
+}
+
+.social-icon>div:hover{
+  color: hsl(300, 69%, 71%);
+}
+
+.social-icon:not(:last-child){
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1270px) {
+  .main{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .content{
+  padding-top: 100px;
+    text-align: center;
+    max-width: 560px;
+  }
+  p, a{
+    font-size: 30px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  h1{
+    font-size: 55px;
+    line-height: 1.5;
+  }
+  a{
+    padding: 20px 120px;
+    border-radius: 50px;
+  }
+  .social-icon{
+    margin: 100px;
+    justify-self: center;
+    align-self: center;
+  }
+body{
+  height: max-content;
+}
+
+}
+
+
